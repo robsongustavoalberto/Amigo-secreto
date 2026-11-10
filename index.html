@@ -112,8 +112,12 @@ $("ok").onclick=async function(){
   var s=await db.collection(P+"draws").doc(myId).get();
   $("err").textContent="";$("me").textContent=me;
   if(s.exists)showRes(s.data().to);else{$("reel").textContent="?";$("reel").className="reel";$("draw").disabled=false;view("v2")}
- }catch(x){$("err").textContent="Não foi possível ligar. Abre no Chrome do telemóvel e verifica a internet."}
- $("ok").disabled=false};
+ }catch(x){
+  console.error("ERRO FIREBASE:", x);
+
+  $("err").textContent =
+    "Erro: " + (x.code || x.message || "Desconhecido");
+}
 async function doDraw(){
  return db.runTransaction(async function(tx){
   var mine=db.collection(P+"draws").doc(myId),s=await tx.get(mine);
