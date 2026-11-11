@@ -1,0 +1,12 @@
+name = "othekula-api"
+main = "worker/index.js"
+compatibility_date = "2026-11-10"
+
+[durable_objects]
+bindings = [
+  { name = "GAME", class_name = "OthekulaGame" }
+]
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["OthekulaGame"]
