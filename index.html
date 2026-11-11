@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Amigo Secreto Othekula</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#fdf6ee;--bg2:#fbe7d3;--card:#ffffff;--tx:#2b1d16;--mu:#85715f;--ac:#c2410c;--ac2:#ea580c;--bd:#f0dcc9;--sh:0 18px 50px -20px rgba(194,65,12,.35)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a120d;--bg2:#2b1a10;--card:#261b15;--tx:#f7ebe2;--mu:#c2ab9a;--ac:#fb923c;--ac2:#f97316;--bd:#43322a;--sh:0 18px 50px -20px rgba(0,0,0,.7)}}
+:root[data-theme="dark"]{--bg:#1a120d;--bg2:#2b1a10;--card:#261b15;--tx:#f7ebe2;--mu:#c2ab9a;--ac:#fb923c;--ac2:#f97316;--bd:#43322a;--sh:0 18px 50px -20px rgba(0,0,0,.7)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:var(--tx);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:radial-gradient(900px 500px at 50% -10%,var(--bg2),transparent 70%),var(--bg)}
+main{max-width:440px;margin:0 auto;padding:34px 20px 28px;min-height:100vh;display:flex;flex-direction:column}
+.hero{text-align:center;margin-bottom:26px}
+.ico{width:64px;height:64px;margin:0 auto 14px;border-radius:50%;display:grid;place-items:center;font-size:30px;background:linear-gradient(135deg,var(--ac2),var(--ac));box-shadow:var(--sh)}
+.eyebrow{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--ac);font-weight:600}
+h1{font-family:"Playfair Display",Georgia,"Times New Roman",serif;font-size:44px;line-height:1.1;margin:6px 0 10px;font-weight:700}
+.orn{display:flex;align-items:center;gap:10px;justify-content:center;color:var(--ac);font-size:12px}
+.orn:before,.orn:after{content:"";height:1px;width:56px;background:linear-gradient(90deg,transparent,var(--ac))}
+.orn:after{transform:scaleX(-1)}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:24px;padding:26px 22px;text-align:center;box-shadow:var(--sh);animation:up .6s ease both}
+@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+p{color:var(--mu);line-height:1.6;margin:0 0 14px;font-size:15px}
+label{display:block;text-align:left;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mu);margin:12px 0 6px;font-weight:600}
+input{width:100%;font:inherit;font-size:19px;padding:14px 16px;border-radius:14px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);outline:none;transition:border .2s,box-shadow .2s}
+input:focus{border-color:var(--ac2);box-shadow:0 0 0 4px rgba(234,88,12,.15)}
+button{font:inherit;cursor:pointer}
+.go{width:100%;padding:15px;border:0;border-radius:14px;background:linear-gradient(135deg,var(--ac2),var(--ac));color:#fff;font-weight:600;font-size:16px;letter-spacing:.02em;margin-top:8px;box-shadow:0 10px 24px -10px rgba(194,65,12,.6);transition:transform .15s}
+.go:active{transform:scale(.98)}.go:disabled{opacity:.6}
+.link{background:none;border:0;color:var(--mu);margin-top:16px;font-size:14px;text-decoration:underline}
+.err{color:#dc2626;min-height:22px;margin:8px 0 0;font-size:14px}
+.reel{font-family:"Playfair Display",Georgia,serif;font-size:40px;font-weight:700;height:92px;display:grid;place-items:center;border-radius:18px;background:var(--bg);border:1px dashed var(--ac);margin:10px 0 18px;color:var(--ac);overflow:hidden}
+.tick{animation:tick .12s ease}@keyframes tick{from{opacity:.25;transform:translateY(-16px)}to{opacity:1;transform:none}}
+.land{animation:pop .6s ease both}
+@keyframes pop{from{transform:scale(.8)}60%{transform:scale(1.12)}to{transform:none}}
+.big{font-family:"Playfair Display",Georgia,serif;font-size:44px;font-weight:700;color:var(--ac);margin:6px 0 16px;animation:pop .7s .1s ease both}
+.test{text-align:center;font-size:12px;letter-spacing:.2em;color:#fff;background:#dc2626;border-radius:99px;padding:4px 12px;margin:0 auto 14px;width:max-content}
+.hide{display:none!important}#clr:not(.hide){display:block}
+footer{margin-top:auto;padding-top:34px;text-align:center;font-size:13px;color:var(--mu)}
+footer .line{height:1px;background:linear-gradient(90deg,transparent,var(--bd),transparent);margin-bottom:16px}
+footer b{display:block;font-family:"Playfair Display",Georgia,serif;font-size:16px;color:var(--tx);font-weight:500;margin-bottom:8px}
+footer b span{color:var(--ac)}
+footer .r{margin:3px 0;line-height:1.6}
+footer a{color:var(--ac);text-decoration:none;font-weight:500}
+</style></head><body><main>
+<div class="hero"><div class="ico">🎁</div><div class="eyebrow">Amigo Secreto</div><h1>Othekula</h1><div class="orn">✦</div></div>
+<div id="tb" class="test hide">MODO DE TESTE</div>
+<div id="v1"><div class="card"><p>Escreve o teu número de WhatsApp e o PIN que recebeste para entrares.</p>
+<label for="num">Número de WhatsApp</label>
+<input id="num" type="tel" inputmode="tel" placeholder="84 123 4567" autocomplete="off">
+<label for="pin">PIN</label>
+<input id="pin" type="password" inputmode="numeric" maxlength="4" placeholder="••••" autocomplete="off" style="letter-spacing:.4em;text-align:center">
+<div class="err" id="err"></div>
+<button class="go" id="ok">Entrar</button></div><button class="link hide" id="clr" style="margin:14px auto 0">Limpar dados de teste</button></div>
+<div id="v2" class="hide"><div class="card"><p>Olá, <b style="color:var(--tx)" id="me"></b>!<br>Toca no botão para sortear o teu amigo secreto. O resultado fica guardado e só tu o vês.</p>
+<div class="reel" id="reel">?</div>
+<div class="err" id="err2"></div>
+<button class="go" id="draw">🎲 Sortear</button></div></div>
+<div id="v3" class="hide"><div class="card"><p>Olá, <b style="color:var(--tx)" id="me3"></b>!<br>O teu amigo secreto é</p><div class="big" id="res"></div>
+<p>Guarda segredo e prepara a prenda! 🤫<br>Quando voltares a entrar, vês sempre o mesmo resultado.</p>
+<button class="link" id="out">Sair</button></div></div>
+<footer><div class="line"></div><b>Desenvolvido por <span>Tito Tech</span></b>
+<div class="r">WhatsApp: <a href="https://wa.me/258875432858" target="_blank" rel="noopener">875 432 858</a> / <a href="https://wa.me/258856472858" target="_blank" rel="noopener">856 472 858</a></div>
+<div class="r">Chamadas: <a href="tel:+258875432858">875 432 858</a> / <a href="tel:+258856472858">856 472 858</a></div></footer>
+<script>
+// Othekula — interface original. Altera apenas o endereço da API depois do deploy.
+const API_URL = "https://COLOCA-AQUI-O-NOME-DO-WORKER.workers.dev";
+const NAMES = ["Cidia","Dinalva","Domingas","Lurdes","Luisa","Nilza","Olivia","Osoria"];
+let me = "";
+let sessionToken = "";
+let busy = false;
+function $(id) { return document.getElementById(id); }
+function view(v) { ["v1","v2","v3"].forEach(x => $(x).classList.toggle("hide", x !== v)); }
+function setError(id, message) { $(id).textContent = message || ""; }
+function setBusy(id, value) {
+  $(id).disabled = value;
+  if (id === "ok") $(id).textContent = value ? "A verificar…" : "Entrar";
+  if (id === "draw") $(id).textContent = value ? "A sortear…" : "🎲 Sortear";
+}
+async function api(path, body) {
+  const headers = { "Content-Type": "application/json" };
+  if (sessionToken) headers.Authorization = "Bearer " + sessionToken;
+  let response;
+  try {
+    response = await fetch(API_URL + path, { method: "POST", headers, body: JSON.stringify(body || {}) });
+  } catch (e) {
+    const err = new Error("Não foi possível contactar o servidor. Verifica a internet e o endereço da API.");
+    err.code = "network/error";
+    throw err;
+  }
+  let data = {};
+  try { data = await response.json(); } catch (_) {}
+  if (!response.ok) {
+    const err = new Error(data.error || "O servidor recusou o pedido.");
+    err.code = data.code || "server/error";
+    throw err;
+  }
+  return data;
+}
+function showResult(to) {
+  $("me3").textContent = me;
+  $("res").textContent = to;
+  view("v3");
+}
+function randomName(last) {
+  const choices = NAMES.filter(n => n !== last && n !== me);
+  return choices[Math.floor(Math.random() * choices.length)] || "✦";
+}
+function spin(to, callback) {
+  const reel = $("reel"); let i = 0, last = "";
+  (function step() {
+    if (i >= 26) {
+      reel.textContent = to; reel.className = "reel land"; setTimeout(callback, 1100); return;
+    }
+    last = randomName(last); reel.textContent = last; reel.className = "reel";
+    void reel.offsetWidth; reel.className = "reel tick";
+    i++; setTimeout(step, 70 + 0.5 * i * i);
+  })();
+}
+$("ok").onclick = async function() {
+  if (busy) return;
+  let phone = $("num").value.replace(/\D/g, "");
+  if (phone.length > 9) phone = phone.slice(-9);
+  const pin = $("pin").value.trim();
+  if (phone.length !== 9) { setError("err", "Escreve o número com 9 dígitos (ex.: 84 123 4567)."); return; }
+  if (!/^\d{4}$/.test(pin)) { setError("err", "Escreve o PIN de 4 dígitos."); return; }
+  if (!API_URL.startsWith("https://") || API_URL.includes("COLOCA-AQUI")) {
+    setError("err", "Falta configurar o endereço do servidor. Consulta as instruções de instalação."); return;
+  }
+  busy = true; setBusy("ok", true); setError("err", "A verificar os teus dados…");
+  try {
+    const login = await api("/login", { phone, pin });
+    sessionToken = login.token; me = login.me;
+    const result = await api("/result", {});
+    setError("err", ""); $("me").textContent = me;
+    if (result.to) showResult(result.to);
+    else { $("reel").textContent = "?"; $("reel").className = "reel"; $("draw").disabled = false; view("v2"); }
+  } catch (e) {
+    console.error("Othekula login:", e);
+    setError("err", e.message || "Não foi possível entrar. Tenta novamente.");
+  } finally { busy = false; setBusy("ok", false); }
+};
+$("draw").onclick = async function() {
+  if (busy || !sessionToken) return;
+  busy = true; setBusy("draw", true); setError("err2", "A realizar o sorteio…");
+  try {
+    const result = await api("/draw", {});
+    setError("err2", ""); spin(result.to, () => showResult(result.to));
+  } catch (e) {
+    console.error("Othekula draw:", e);
+    setError("err2", e.message || "Não foi possível sortear. Tenta novamente.");
+    setBusy("draw", false);
+  } finally { busy = false; }
+};
+$("out").onclick = function() {
+  sessionToken = ""; me = ""; $("num").value = ""; $("pin").value = "";
+  setError("err", ""); setError("err2", ""); $("draw").disabled = false; view("v1");
+};
+</script></main></body></html>
